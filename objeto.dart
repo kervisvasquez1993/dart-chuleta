@@ -4,7 +4,7 @@ void main()
     print(tobi);
     final biodynamics = Dynamics(nombre: 'biodynamics', linea: 'trauma');
     print(biodynamics);
-    final goku = new Heroe(nombre: , poder)
+    final goku = new Heroe(nombre: 'kakarota', poder: 'super sayayin');
 }
 class Hero
 {
@@ -25,6 +25,6 @@ class Dynamics
 class Heroe {
   String nombre;
   String poder;
-  Heroe({this.nombre = 'sin definir', this.poder = 'sin definir'})
+  Heroe({this.nombre = 'sin definir', this.poder = 'sin definir'});
 
 }
