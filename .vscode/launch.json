@@ -6,7 +6,7 @@
     "configurations": [
         {
             "name": "Dart",
-            "program": "main.dart",
+            "program": "objeto.dart",
             "request": "launch",
             "type": "dart"
         }

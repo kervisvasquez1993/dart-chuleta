@@ -51,6 +51,16 @@ print(kervis['nombre']);
   print(despedida());
   print(argumentos(texto:'hola ', nombre:'kervis'));
   print(argumentos2(texto:'hola ', nombre:'kervis2'));
+
+  // clases es un molde para hacer galletas 
+
+  final wolveries = new Heroe(nombre: 'Logan', poder: 'regenaracion');
+  // final ------->>> es para deciRLE A DART QUE ESA VARIABLE NUNCA a cambair de su valor como tal 
+  print(wolveries);
+
+  final tobi = new Hero(nombre: 'OBITO', poder:'camui');
+  print(tobi);
+  
 }
 
 // si la funcion no retorna nada
@@ -71,3 +81,38 @@ String argumentos({String texto,String nombre})
 String argumentos2({String texto,String nombre}) => '$texto, $nombre';
 
 
+// clases en js 
+
+class Heroe
+{
+  String nombre;
+  String poder;
+  //constructor
+  Heroe({String nombre = 'Sin Nombre', String poder}){
+    this.nombre = nombre;
+    this.poder = poder;
+  }
+  @override
+  String toString() {
+    // TODO: implement toString
+    return '${this.nombre} - ${this.poder}';
+  }
+}
+class Hero
+{
+  String nombre; 
+  String poder;
+
+  Hero({String this.nombre = 'Sin definir', this.poder})
+  {
+
+    
+
+    @override
+     String toString() 
+     {
+       // TODO: implement toString
+       return 'nombre:  $nombre -  poder: $poder';
+     }
+  }
+}
