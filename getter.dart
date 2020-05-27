@@ -1,14 +1,17 @@
+
+
 void main()
 {
     final cuadrado = Cuadrado();
-    cuadrado.lado = 0;
+    cuadrado.lado = 10;
     print(cuadrado);
+    print('área : ${ cuadrado.area }');
 }
 
 class Cuadrado
 {
   double  _lado; // propiedades privadas solo visible dentro de la propia clase
-  double  _area;
+  //double  _area;
   set lado(double valor)
   {
     if(valor <= 0)
@@ -17,6 +20,8 @@ class Cuadrado
     }
     _lado = valor;
   }
-  @override
-  String toString() => 'Lado: $_lado';
+  double get area // como nombre como quiero que se vea fuera de la clase
+  {
+      return(_lado * _lado);
+  }
 }
