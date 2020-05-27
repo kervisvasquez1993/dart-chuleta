@@ -6,7 +6,7 @@
     "configurations": [
         {
             "name": "Dart",
-            "program": "clasesabs.dart",
+            "program": "mixint.dart",
             "request": "launch",
             "type": "dart"
         }
